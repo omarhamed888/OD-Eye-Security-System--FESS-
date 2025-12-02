@@ -1,0 +1,65 @@
+2025-12-02 17:40:04.858 | WARNING  | src.config:<module>:34 - TELEGRAM_TOKEN is missing or invalid in .env. Telegram notifications will be disabled.
+2025-12-02 17:40:04.859 | WARNING  | src.config:<module>:37 - CHAT_ID is missing or invalid in .env. Alerts cannot be sent.
+2025-12-02 17:40:14.792 | INFO     | __main__:main:47 - Starting Falcon Eye Security System (FESS)...
+2025-12-02 17:40:14.793 | ERROR    | src.notifier:start:19 - Invalid Telegram Token. Bot disabled.
+2025-12-02 17:40:14.793 | INFO     | src.detector:__init__:9 - Loading YOLO model: yolov8n.pt
+2025-12-02 17:40:18.346 | WARNING  | src.face_auth:__init__:23 - Face Recognition library not available. Running in detection-only mode.
+2025-12-02 17:40:18.347 | INFO     | __main__:main:60 - Connecting to camera source: 0
+2025-12-02 17:40:33.325 | INFO     | __main__:main:68 - System Ready. Press 'q' to exit.
+2025-12-02 17:40:54.934 | INFO     | __main__:main:114 - User interrupted system.
+2025-12-02 17:40:55.313 | INFO     | __main__:main:120 - System Shutdown Complete.
+2025-12-02 17:41:33.158 | WARNING  | src.config:<module>:34 - TELEGRAM_TOKEN is missing or invalid in .env. Telegram notifications will be disabled.
+2025-12-02 17:41:33.159 | WARNING  | src.config:<module>:37 - CHAT_ID is missing or invalid in .env. Alerts cannot be sent.
+2025-12-02 17:41:37.607 | INFO     | __main__:main:47 - Starting Falcon Eye Security System (FESS)...
+2025-12-02 17:41:37.607 | ERROR    | src.notifier:start:19 - Invalid Telegram Token. Bot disabled.
+2025-12-02 17:41:37.607 | INFO     | src.detector:__init__:9 - Loading YOLO model: yolov8n.pt
+2025-12-02 17:41:37.704 | WARNING  | src.face_auth:__init__:23 - Face Recognition library not available. Running in detection-only mode.
+2025-12-02 17:41:37.706 | INFO     | __main__:main:60 - Connecting to camera source: 0
+2025-12-02 17:41:49.707 | INFO     | __main__:main:68 - System Ready. Press 'q' to exit.
+2025-12-02 17:43:27.080 | INFO     | __main__:main:114 - User interrupted system.
+2025-12-02 17:43:27.444 | INFO     | __main__:main:120 - System Shutdown Complete.
+2025-12-02 17:53:52.502 | INFO     | __main__:main:47 - Starting Falcon Eye Security System (FESS)...
+2025-12-02 17:53:52.504 | INFO     | src.notifier:_start_bot:32 - Initializing Telegram Bot...
+2025-12-02 17:53:52.504 | INFO     | src.detector:__init__:9 - Loading YOLO model: yolov8n.pt
+2025-12-02 17:53:52.588 | WARNING  | src.face_auth:__init__:23 - Face Recognition library not available. Running in detection-only mode.
+2025-12-02 17:53:52.589 | INFO     | __main__:main:60 - Connecting to camera source: 0
+2025-12-02 17:53:53.892 | INFO     | src.notifier:_start_bot:39 - Telegram Bot Polling Started.
+2025-12-02 17:53:53.892 | ERROR    | src.notifier:_start_bot:42 - Telegram Bot Error: Cannot close a running event loop
+2025-12-02 17:54:06.716 | INFO     | __main__:main:68 - System Ready. Press 'q' to exit.
+2025-12-02 17:54:29.114 | INFO     | __main__:main:120 - System Shutdown Complete.
+2025-12-02 17:59:16.197 | INFO     | __main__:main:47 - Starting Falcon Eye Security System (FESS)...
+2025-12-02 17:59:16.199 | INFO     | src.notifier:_start_bot:32 - Initializing Telegram Bot...
+2025-12-02 17:59:16.199 | INFO     | src.detector:__init__:9 - Loading YOLO model: yolov8n.pt
+2025-12-02 17:59:16.469 | WARNING  | src.face_auth:__init__:23 - Face Recognition library not available. Running in detection-only mode.
+2025-12-02 17:59:16.469 | INFO     | __main__:main:60 - Connecting to camera source: 0
+2025-12-02 17:59:16.715 | INFO     | src.notifier:_start_bot:39 - Telegram Bot Polling Started.
+2025-12-02 17:59:27.986 | INFO     | __main__:main:68 - System Ready. Press 'q' to exit.
+2025-12-02 18:02:30.957 | INFO     | __main__:main:120 - System Shutdown Complete.
+2025-12-02 18:21:32.760 | INFO     | __main__:main:47 - Starting Falcon Eye Security System (FESS)...
+2025-12-02 18:21:32.761 | INFO     | src.notifier:start:27 - Telegram Bot thread started.
+2025-12-02 18:21:32.762 | INFO     | src.detector:__init__:9 - Loading YOLO model: yolov8n.pt
+2025-12-02 18:21:32.763 | INFO     | src.notifier:_init_bot:58 - Initializing Telegram Bot...
+2025-12-02 18:21:32.927 | WARNING  | src.face_auth:__init__:23 - Face Recognition library not available. Running in detection-only mode.
+2025-12-02 18:21:32.927 | INFO     | __main__:main:60 - Connecting to camera source: 0
+2025-12-02 18:21:33.363 | INFO     | src.notifier:_init_bot:76 - 🦅 Telegram Bot is Online and Polling!
+2025-12-02 18:21:40.972 | INFO     | __main__:main:68 - System Ready. Press 'q' to exit.
+2025-12-02 18:22:09.890 | WARNING  | __main__:main:87 - CRITICAL SECURITY BREACH DETECTED!
+2025-12-02 18:22:10.313 | INFO     | src.notifier:arm_command:100 - System Armed via Telegram.
+2025-12-02 18:22:11.294 | INFO     | src.notifier:_send_alert_coroutine:123 - Alert sent to 869824962
+2025-12-02 18:22:15.895 | INFO     | src.notifier:disarm_command:105 - System Disarmed via Telegram.
+2025-12-02 18:22:23.687 | INFO     | src.notifier:arm_command:100 - System Armed via Telegram.
+2025-12-02 18:22:41.937 | WARNING  | __main__:main:87 - CRITICAL SECURITY BREACH DETECTED!
+2025-12-02 18:22:43.088 | INFO     | src.notifier:_send_alert_coroutine:123 - Alert sent to 869824962
+2025-12-02 18:23:12.089 | WARNING  | __main__:main:87 - CRITICAL SECURITY BREACH DETECTED!
+2025-12-02 18:23:13.424 | INFO     | src.notifier:_send_alert_coroutine:123 - Alert sent to 869824962
+2025-12-02 18:23:19.403 | INFO     | __main__:main:121 - System Shutdown Complete.
+2025-12-02 18:31:08.344 | INFO     | __main__:main:47 - Starting Falcon Eye Security System (FESS)...
+2025-12-02 18:31:08.347 | INFO     | src.notifier:start:27 - Telegram Bot thread started.
+2025-12-02 18:31:08.347 | INFO     | src.detector:__init__:9 - Loading YOLO model: yolov8n.pt
+2025-12-02 18:31:08.348 | INFO     | src.notifier:_init_bot:58 - Initializing Telegram Bot...
+2025-12-02 18:31:08.467 | WARNING  | src.face_auth:__init__:23 - Face Recognition library not available. Running in detection-only mode.
+2025-12-02 18:31:08.467 | INFO     | __main__:main:60 - Connecting to camera source: 0
+2025-12-02 18:31:08.919 | INFO     | src.notifier:_init_bot:76 - 🦅 Telegram Bot is Online and Polling!
+2025-12-02 18:31:16.899 | INFO     | __main__:main:68 - System Ready. Press 'q' to exit.
+2025-12-02 18:46:25.716 | INFO     | __main__:main:114 - User interrupted system.
+2025-12-02 18:46:26.047 | INFO     | __main__:main:121 - System Shutdown Complete.
