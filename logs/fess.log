@@ -7709,3 +7709,260 @@ ModuleNotFoundError: No module named 'lap'
 2025-12-05 09:24:38.966 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 27.8s more
 2025-12-05 09:24:41.253 | INFO     | __main__:main:922 - User interrupted system
 2025-12-05 09:24:41.285 | INFO     | __main__:main:926 - FESS Terminated
+2025-12-05 10:05:43.167 | INFO     | __main__:main:914 - ======================================================================
+2025-12-05 10:05:43.167 | INFO     | __main__:main:915 - Starting Falcon Eye Security System - Professional Dashboard
+2025-12-05 10:05:43.168 | INFO     | __main__:main:916 - ======================================================================
+2025-12-05 10:05:43.341 | INFO     | __main__:__init__:223 - Initializing Professional GUI Dashboard...
+2025-12-05 10:05:43.342 | INFO     | src.detector:__init__:9 - Loading YOLO model: yolov8n.pt
+2025-12-05 10:05:43.433 | WARNING  | src.face_auth:__init__:18 - Face Recognition library not installed.
+2025-12-05 10:05:43.433 | INFO     | src.notifier:start:27 - Telegram Bot thread started.
+2025-12-05 10:05:43.434 | INFO     | __main__:__init__:239 - Connecting to camera: 0
+2025-12-05 10:05:43.435 | INFO     | src.notifier:_init_bot:64 - Initializing Telegram Bot...
+2025-12-05 10:05:45.353 | INFO     | src.notifier:_init_bot:82 - 🦅 Telegram Bot is Online and Polling!
+2025-12-05 10:05:49.615 | INFO     | __main__:__init__:252 - ✅ Professional FESS Dashboard Ready
+2025-12-05 10:05:53.978 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:54.022 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 1764921954.0s (Cooldown: 30s)
+2025-12-05 10:05:54.057 | WARNING  | __main__:handle_detections:808 - CRITICAL SECURITY BREACH DETECTED!
+2025-12-05 10:05:54.062 | INFO     | __main__:handle_detections:814 - Evidence saved: E:\OD_Eye_Security_System\logs\alert_20251205_100554.jpg
+2025-12-05 10:05:54.063 | INFO     | __main__:handle_detections:818 - Telegram alert sent successfully
+2025-12-05 10:05:54.666 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:54.667 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 0.7s (Cooldown: 30s)
+2025-12-05 10:05:54.667 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 29.3s more
+2025-12-05 10:05:55.029 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:55.029 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 1.1s (Cooldown: 30s)
+2025-12-05 10:05:55.029 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 28.9s more
+2025-12-05 10:05:55.216 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:55.216 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 1.2s (Cooldown: 30s)
+2025-12-05 10:05:55.216 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 28.8s more
+2025-12-05 10:05:55.349 | INFO     | src.notifier:_send_alert_coroutine:129 - Alert sent to 1279543215
+2025-12-05 10:05:55.464 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:55.465 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 1.5s (Cooldown: 30s)
+2025-12-05 10:05:55.465 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 28.5s more
+2025-12-05 10:05:56.512 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:56.513 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 2.5s (Cooldown: 30s)
+2025-12-05 10:05:56.513 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 27.5s more
+2025-12-05 10:05:56.706 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:56.706 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 2.7s (Cooldown: 30s)
+2025-12-05 10:05:56.707 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 27.3s more
+2025-12-05 10:05:56.931 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:56.932 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 3.0s (Cooldown: 30s)
+2025-12-05 10:05:56.932 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 27.0s more
+2025-12-05 10:05:57.156 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:57.156 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 3.2s (Cooldown: 30s)
+2025-12-05 10:05:57.156 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 26.8s more
+2025-12-05 10:05:57.375 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:57.376 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 3.4s (Cooldown: 30s)
+2025-12-05 10:05:57.376 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 26.6s more
+2025-12-05 10:05:57.565 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:57.566 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 3.6s (Cooldown: 30s)
+2025-12-05 10:05:57.567 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 26.4s more
+2025-12-05 10:05:57.795 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:57.796 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 3.8s (Cooldown: 30s)
+2025-12-05 10:05:57.796 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 26.2s more
+2025-12-05 10:05:58.017 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:58.017 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 4.0s (Cooldown: 30s)
+2025-12-05 10:05:58.017 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 26.0s more
+2025-12-05 10:05:58.988 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:58.989 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 5.0s (Cooldown: 30s)
+2025-12-05 10:05:58.989 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 25.0s more
+2025-12-05 10:05:59.216 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:59.216 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 5.2s (Cooldown: 30s)
+2025-12-05 10:05:59.216 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 24.8s more
+2025-12-05 10:05:59.431 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:59.432 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 5.5s (Cooldown: 30s)
+2025-12-05 10:05:59.432 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 24.5s more
+2025-12-05 10:05:59.629 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:59.629 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 5.7s (Cooldown: 30s)
+2025-12-05 10:05:59.629 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 24.3s more
+2025-12-05 10:05:59.832 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:05:59.832 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 5.9s (Cooldown: 30s)
+2025-12-05 10:05:59.832 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 24.1s more
+2025-12-05 10:06:00.040 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:00.040 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 6.1s (Cooldown: 30s)
+2025-12-05 10:06:00.040 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 23.9s more
+2025-12-05 10:06:00.228 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:00.228 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 6.3s (Cooldown: 30s)
+2025-12-05 10:06:00.228 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 23.7s more
+2025-12-05 10:06:00.442 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:00.443 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 6.5s (Cooldown: 30s)
+2025-12-05 10:06:00.443 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 23.5s more
+2025-12-05 10:06:00.906 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:00.906 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 6.9s (Cooldown: 30s)
+2025-12-05 10:06:00.906 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 23.1s more
+2025-12-05 10:06:01.109 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:01.109 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 7.1s (Cooldown: 30s)
+2025-12-05 10:06:01.110 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 22.9s more
+2025-12-05 10:06:01.307 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:01.307 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 7.3s (Cooldown: 30s)
+2025-12-05 10:06:01.307 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 22.7s more
+2025-12-05 10:06:01.533 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:01.533 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 7.6s (Cooldown: 30s)
+2025-12-05 10:06:01.534 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 22.4s more
+2025-12-05 10:06:14.191 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:14.199 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 20.2s (Cooldown: 30s)
+2025-12-05 10:06:14.199 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 9.8s more
+2025-12-05 10:06:14.400 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:14.400 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 20.4s (Cooldown: 30s)
+2025-12-05 10:06:14.401 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 9.6s more
+2025-12-05 10:06:15.167 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:15.167 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 21.2s (Cooldown: 30s)
+2025-12-05 10:06:15.167 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 8.8s more
+2025-12-05 10:06:15.375 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:15.375 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 21.4s (Cooldown: 30s)
+2025-12-05 10:06:15.375 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 8.6s more
+2025-12-05 10:06:15.787 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:15.787 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 21.8s (Cooldown: 30s)
+2025-12-05 10:06:15.787 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 8.2s more
+2025-12-05 10:06:16.328 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:16.328 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 22.4s (Cooldown: 30s)
+2025-12-05 10:06:16.328 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 7.6s more
+2025-12-05 10:06:16.700 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:16.700 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 22.7s (Cooldown: 30s)
+2025-12-05 10:06:16.700 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 7.3s more
+2025-12-05 10:06:16.914 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:16.914 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 22.9s (Cooldown: 30s)
+2025-12-05 10:06:16.915 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 7.1s more
+2025-12-05 10:06:17.784 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:17.785 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 23.8s (Cooldown: 30s)
+2025-12-05 10:06:17.785 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 6.2s more
+2025-12-05 10:06:17.958 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:17.958 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 24.0s (Cooldown: 30s)
+2025-12-05 10:06:17.958 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 6.0s more
+2025-12-05 10:06:18.140 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:18.140 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 24.2s (Cooldown: 30s)
+2025-12-05 10:06:18.140 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 5.8s more
+2025-12-05 10:06:19.021 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:19.022 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 25.0s (Cooldown: 30s)
+2025-12-05 10:06:19.022 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 5.0s more
+2025-12-05 10:06:19.224 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:19.225 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 25.2s (Cooldown: 30s)
+2025-12-05 10:06:19.225 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 4.8s more
+2025-12-05 10:06:19.413 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:19.413 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 25.4s (Cooldown: 30s)
+2025-12-05 10:06:19.413 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 4.6s more
+2025-12-05 10:06:19.834 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:19.862 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 25.9s (Cooldown: 30s)
+2025-12-05 10:06:19.863 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 4.1s more
+2025-12-05 10:06:20.063 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:20.063 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 26.1s (Cooldown: 30s)
+2025-12-05 10:06:20.064 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 3.9s more
+2025-12-05 10:06:20.425 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:20.426 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 26.5s (Cooldown: 30s)
+2025-12-05 10:06:20.426 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 3.5s more
+2025-12-05 10:06:20.611 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:20.611 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 26.6s (Cooldown: 30s)
+2025-12-05 10:06:20.611 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 3.4s more
+2025-12-05 10:06:21.005 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:21.005 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 27.0s (Cooldown: 30s)
+2025-12-05 10:06:21.005 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 3.0s more
+2025-12-05 10:06:21.248 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:21.249 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 27.3s (Cooldown: 30s)
+2025-12-05 10:06:21.249 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 2.7s more
+2025-12-05 10:06:21.461 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:21.462 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 27.5s (Cooldown: 30s)
+2025-12-05 10:06:21.462 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 2.5s more
+2025-12-05 10:06:21.653 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:21.654 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 27.7s (Cooldown: 30s)
+2025-12-05 10:06:21.655 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 2.3s more
+2025-12-05 10:06:21.850 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:21.850 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 27.9s (Cooldown: 30s)
+2025-12-05 10:06:21.851 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 2.1s more
+2025-12-05 10:06:22.087 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:22.088 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 28.1s (Cooldown: 30s)
+2025-12-05 10:06:22.088 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 1.9s more
+2025-12-05 10:06:22.305 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:22.305 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 28.3s (Cooldown: 30s)
+2025-12-05 10:06:22.305 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 1.7s more
+2025-12-05 10:06:22.515 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:22.516 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 28.5s (Cooldown: 30s)
+2025-12-05 10:06:22.516 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 1.5s more
+2025-12-05 10:06:22.729 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:22.730 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 28.8s (Cooldown: 30s)
+2025-12-05 10:06:22.730 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 1.2s more
+2025-12-05 10:06:22.931 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:22.931 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 29.0s (Cooldown: 30s)
+2025-12-05 10:06:22.931 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 1.0s more
+2025-12-05 10:06:23.136 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:23.136 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 29.2s (Cooldown: 30s)
+2025-12-05 10:06:23.136 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 0.8s more
+2025-12-05 10:06:23.331 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:23.331 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 29.4s (Cooldown: 30s)
+2025-12-05 10:06:23.331 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 0.6s more
+2025-12-05 10:06:23.715 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:23.716 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 29.7s (Cooldown: 30s)
+2025-12-05 10:06:23.716 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 0.3s more
+2025-12-05 10:06:23.917 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:23.917 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 29.9s (Cooldown: 30s)
+2025-12-05 10:06:23.917 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 0.1s more
+2025-12-05 10:06:24.106 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:24.106 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 30.1s (Cooldown: 30s)
+2025-12-05 10:06:24.115 | WARNING  | __main__:handle_detections:808 - CRITICAL SECURITY BREACH DETECTED!
+2025-12-05 10:06:24.120 | INFO     | __main__:handle_detections:814 - Evidence saved: E:\OD_Eye_Security_System\logs\alert_20251205_100624.jpg
+2025-12-05 10:06:24.121 | INFO     | __main__:handle_detections:818 - Telegram alert sent successfully
+2025-12-05 10:06:24.966 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:24.966 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 0.9s (Cooldown: 30s)
+2025-12-05 10:06:24.966 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 29.1s more
+2025-12-05 10:06:25.192 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:25.192 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 1.1s (Cooldown: 30s)
+2025-12-05 10:06:25.192 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 28.9s more
+2025-12-05 10:06:25.533 | INFO     | src.notifier:_send_alert_coroutine:129 - Alert sent to 1279543215
+2025-12-05 10:06:25.622 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:25.629 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 1.5s (Cooldown: 30s)
+2025-12-05 10:06:25.630 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 28.5s more
+2025-12-05 10:06:25.846 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:25.846 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 1.7s (Cooldown: 30s)
+2025-12-05 10:06:25.846 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 28.3s more
+2025-12-05 10:06:26.928 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:26.929 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 2.8s (Cooldown: 30s)
+2025-12-05 10:06:26.929 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 27.2s more
+2025-12-05 10:06:27.154 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:27.155 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 3.0s (Cooldown: 30s)
+2025-12-05 10:06:27.155 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 27.0s more
+2025-12-05 10:06:27.357 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:27.357 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 3.3s (Cooldown: 30s)
+2025-12-05 10:06:27.357 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 26.7s more
+2025-12-05 10:06:28.158 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:28.159 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 4.0s (Cooldown: 30s)
+2025-12-05 10:06:28.159 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 26.0s more
+2025-12-05 10:06:28.370 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:28.371 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 4.3s (Cooldown: 30s)
+2025-12-05 10:06:28.371 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 25.7s more
+2025-12-05 10:06:28.562 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:28.563 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 4.5s (Cooldown: 30s)
+2025-12-05 10:06:28.563 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 25.5s more
+2025-12-05 10:06:28.779 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:28.779 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 4.7s (Cooldown: 30s)
+2025-12-05 10:06:28.779 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 25.3s more
+2025-12-05 10:06:28.991 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:28.992 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 4.9s (Cooldown: 30s)
+2025-12-05 10:06:28.992 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 25.1s more
+2025-12-05 10:06:29.595 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:29.596 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 5.5s (Cooldown: 30s)
+2025-12-05 10:06:29.596 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 24.5s more
+2025-12-05 10:06:30.209 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:30.209 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 6.1s (Cooldown: 30s)
+2025-12-05 10:06:30.210 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 23.9s more
+2025-12-05 10:06:30.786 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:30.786 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 6.7s (Cooldown: 30s)
+2025-12-05 10:06:30.786 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 23.3s more
+2025-12-05 10:06:30.972 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:30.972 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 6.9s (Cooldown: 30s)
+2025-12-05 10:06:30.973 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 23.1s more
+2025-12-05 10:06:31.552 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:31.561 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 7.4s (Cooldown: 30s)
+2025-12-05 10:06:31.561 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 22.6s more
+2025-12-05 10:06:31.988 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:31.988 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 7.9s (Cooldown: 30s)
+2025-12-05 10:06:31.988 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 22.1s more
+2025-12-05 10:06:32.543 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:32.543 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 8.4s (Cooldown: 30s)
+2025-12-05 10:06:32.543 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 21.6s more
+2025-12-05 10:06:32.736 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:32.736 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 8.6s (Cooldown: 30s)
+2025-12-05 10:06:32.737 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 21.4s more
+2025-12-05 10:06:32.941 | DEBUG    | __main__:handle_detections:788 - CRITICAL status detected! Armed=True
+2025-12-05 10:06:32.941 | DEBUG    | __main__:handle_detections:804 - Time since last alert: 8.8s (Cooldown: 30s)
+2025-12-05 10:06:32.941 | DEBUG    | __main__:handle_detections:829 - Alert on cooldown. Wait 21.2s more
+2025-12-05 10:06:33.145 | INFO     | __main__:on_closing:893 - Shutting down FESS Professional Dashboard...
+2025-12-05 10:06:33.964 | INFO     | __main__:on_closing:908 - ✅ Shutdown complete
+2025-12-05 10:06:34.133 | INFO     | __main__:main:926 - FESS Terminated
