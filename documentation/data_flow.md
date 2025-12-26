@@ -1,6 +1,6 @@
 # Data Flow & Lifecycle of an Alert
 
-![Data Flow](../data_flow_process_1766784736761.png)
+![Data Flow](./assets/flow.png)
 
 ## 📡 The Alert Journey
 Below is the step-by-step technical flow of how a detection becomes a HUD notification.

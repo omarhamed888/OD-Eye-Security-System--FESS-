@@ -10,7 +10,7 @@ Detailed breakdown of the system components, technology stack, and backend logic
 ### 2. [Data Flow](./data_flow.md)
 Step-by-step lifecycle of an alert, from camera lens to the CSS transitions in the HUD.
 
-### 3. [Frontend Interface Concept](./ui_concept.md) - *WIP*
+### 3. [Frontend Interface Concept](./ui_concept.md)
 Visual guide to the "Command Center" dashboard and its reactive components.
 
 ---
@@ -31,5 +31,5 @@ To get the system running locally:
 ---
 
 ## 🧪 Visual Concepts
-![Dashboard UI Concept](../dashboard_ui_concept_1766784752513.png)
+![Dashboard UI Concept](./assets/ui_concept.png)
 *Conceptual design of the 'Combat HUD' monitoring interface.*

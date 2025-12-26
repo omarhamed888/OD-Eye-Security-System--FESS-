@@ -1,6 +1,6 @@
 # Falcon Eye Security System (FESS) - Project Architecture
 
-![System Architecture](../system_architecture_diagram_1766784718564.png)
+![System Architecture](./assets/architecture.png)
 
 ## 🏗️ High-Level Overview
 Falcon Eye is a next-generation surveillance platform that combines real-time computer vision with a high-performance web architecture. The system is designed for low-latency detection and immediate response.
