@@ -37,7 +37,7 @@ if not CHAT_ID or CHAT_ID == "your_chat_id_here":
     logger.warning("CHAT_ID is missing or invalid in .env. Alerts cannot be sent.")
 
 # Detection Config
-CONFIDENCE_THRESHOLD = 0.6
+CONFIDENCE_THRESHOLD = 0.4
 ALERT_COOLDOWN = 30  # Seconds
 MODEL_PATH = "yolov8n.pt" 
 
