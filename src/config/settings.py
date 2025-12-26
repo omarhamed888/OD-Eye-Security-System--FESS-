@@ -1,6 +1,6 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field, field_validator
-from typing import Optional
+from typing import Optional, List
 import os
 
 class RedisSettings(BaseSettings):
@@ -37,10 +37,32 @@ class CacheSettings(BaseSettings):
     
     model_config = SettingsConfigDict(env_ignore_empty=True, extra='ignore')
     
+class KafkaSettings(BaseSettings):
+    bootstrap_servers: List[str] = Field(default=["localhost:9092"])
+    topic_motion_events: str = Field(default="motion.detection.events", validation_alias="KAFKA_TOPIC_MOTION")
+    topic_face_events: str = Field(default="face.recognition.events", validation_alias="KAFKA_TOPIC_FACES")
+    topic_alert_events: str = Field(default="alert.events", validation_alias="KAFKA_TOPIC_ALERTS")
+    
+    # Producer settings
+    acks: str = Field(default="1", validation_alias="KAFKA_ACKS")
+    compression_type: str = Field(default="snappy", validation_alias="KAFKA_COMPRESSION")
+    linger_ms: int = Field(default=10, validation_alias="KAFKA_LINGER_MS")
+    batch_size: int = Field(default=16384, validation_alias="KAFKA_BATCH_SIZE")
+    max_request_size: int = Field(default=1048576, validation_alias="KAFKA_MAX_REQUEST_SIZE")
+    
+    # Security (optional)
+    security_protocol: str = Field(default="PLAINTEXT", validation_alias="KAFKA_SECURITY_PROTOCOL")
+    sasl_mechanism: Optional[str] = Field(default=None, validation_alias="KAFKA_SASL_MECHANISM")
+    sasl_username: Optional[str] = Field(default=None, validation_alias="KAFKA_SASL_USERNAME")
+    sasl_password: Optional[str] = Field(default=None, validation_alias="KAFKA_SASL_PASSWORD")
+    
+    model_config = SettingsConfigDict(env_ignore_empty=True, extra='ignore')
+
 class Settings(BaseSettings):
     redis: RedisSettings = Field(default_factory=RedisSettings)
     detector: DetectorSettings = Field(default_factory=DetectorSettings)
     cache: CacheSettings = Field(default_factory=CacheSettings)
+    kafka: KafkaSettings = Field(default_factory=KafkaSettings)
     
     log_level: str = Field(default="INFO", validation_alias="LOG_LEVEL")
     environment: str = Field(default="development", validation_alias="ENVIRONMENT")
