@@ -245,7 +245,7 @@ class CameraService:
         try:
             # Try to find a default user and camera
             user = db.query(User).first()
-            camera = db.query(Camera).filter(Camera.index == self.src).first()
+            camera = db.query(Camera).filter(Camera.source_index == self.src).first()
             
             if not user or not camera:
                 logger.warning("DB: Missing User or Camera record for alert. Alert saved with dummy IDs.")

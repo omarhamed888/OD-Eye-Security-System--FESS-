@@ -67,21 +67,44 @@ export default function Dashboard() {
     };
   }, [isStreaming]);
 
-  // WebSocket Notifications Logic
+  // WebSocket Notifications Logic with Reconnection
   useEffect(() => {
-    const ws = new WebSocket('ws://localhost:8000/api/v1/ws/notifications');
+    let ws: WebSocket | null = null;
+    let reconnectTimeout: any = null;
 
-    ws.onmessage = (event) => {
-      const alert = JSON.parse(event.data);
-      setLiveAlerts(prev => [alert, ...prev].slice(0, 5));
-      setStats(prev => ({ ...prev, alerts: prev.alerts + 1 }));
-      setSystemStatus('CRITICAL');
+    const connect = () => {
+      ws = new WebSocket('ws://localhost:8000/api/v1/ws/notifications');
 
-      // Auto-reset status after 5 seconds if no new alerts
-      setTimeout(() => setSystemStatus('SAFE'), 5000);
+      ws.onmessage = (event) => {
+        try {
+          const alert = JSON.parse(event.data);
+          setLiveAlerts(prev => {
+            if (prev.some(a => a.id === alert.id)) return prev;
+            return [alert, ...prev].slice(0, 10);
+          });
+          setStats(prev => ({ ...prev, alerts: prev.alerts + 1 }));
+          setSystemStatus('CRITICAL');
+          setTimeout(() => setSystemStatus('SAFE'), 5000);
+        } catch (e) {
+          console.error("Malformed alert data:", e);
+        }
+      };
+
+      ws.onclose = () => {
+        reconnectTimeout = setTimeout(connect, 3000);
+      };
+
+      ws.onerror = (err) => {
+        ws?.close();
+      };
     };
 
-    return () => ws.close();
+    connect();
+
+    return () => {
+      if (ws) ws.close();
+      if (reconnectTimeout) clearTimeout(reconnectTimeout);
+    };
   }, []);
 
   return (
@@ -102,8 +125,8 @@ export default function Dashboard() {
         </div>
 
         <div className={`px-6 py-3 rounded-2xl border transition-all duration-500 flex items-center space-x-4 ${systemStatus === 'CRITICAL'
-            ? 'bg-red-500/20 border-red-500 shadow-[0_0_30px_rgba(239,68,68,0.3)] animate-pulse'
-            : 'bg-green-500/10 border-green-500/30'
+          ? 'bg-red-500/20 border-red-500 shadow-[0_0_30px_rgba(239,68,68,0.3)] animate-pulse'
+          : 'bg-green-500/10 border-green-500/30'
           }`}>
           <div className={`w-3 h-3 rounded-full ${systemStatus === 'CRITICAL' ? 'bg-red-500' : 'bg-green-500'}`} />
           <span className={`text-sm font-black uppercase tracking-widest ${systemStatus === 'CRITICAL' ? 'text-red-500' : 'text-green-500'}`}>
@@ -202,34 +225,46 @@ export default function Dashboard() {
               </div>
             </div>
 
-            <div className="space-y-6 flex-1 overflow-y-auto pr-4 custom-scrollbar">
-              {liveAlerts.length === 0 && (
+            <div className="space-y-6 flex-1 overflow-y-auto pr-4 custom-scrollbar min-h-[400px]">
+              {liveAlerts.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-center space-y-4 opacity-30 grayscale transition-all hover:opacity-50">
                   <svg className="w-12 h-12 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                   <p className="text-sm font-bold uppercase tracking-widest text-slate-500">Scanning environment...</p>
                 </div>
-              )}
-              {liveAlerts.map((alert, i) => (
-                <div key={alert.id} className="group/alert relative p-5 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all cursor-pointer animate-in slide-in-from-right-8 duration-500">
-                  <div className={`absolute top-0 left-0 bottom-0 w-1.5 rounded-l-3xl ${alert.severity === 'high' ? 'bg-danger shadow-[0_0_15px_rgba(255,0,110,0.4)]' : 'bg-warning shadow-[0_0_15px_rgba(251,133,0,0.4)]'}`} />
+              ) : (
+                <div className="space-y-4">
+                  {liveAlerts.map((alert) => (
+                    <div
+                      key={alert.id}
+                      className="group/alert relative p-5 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all cursor-pointer animate-in slide-in-from-right-8 duration-500"
+                    >
+                      <div className={`absolute top-0 left-0 bottom-0 w-1.5 rounded-l-3xl ${alert.severity === 'high' || alert.severity === 'critical' ? 'bg-danger shadow-[0_0_15px_rgba(255,0,110,0.4)]' : 'bg-warning shadow-[0_0_15px_rgba(251,133,0,0.4)]'}`}
+                      />
 
-                  <div className="flex gap-4 items-start">
-                    <div className="flex-1 min-w-0">
-                      <div className="flex justify-between items-center mb-1">
-                        <div className="text-[10px] font-black uppercase text-accent tracking-[0.2em]">Node_{alert.camera_id || '01'}</div>
-                        <div className="text-[10px] font-mono text-slate-500">{new Date(alert.created_at).toLocaleTimeString()}</div>
+                      <div className="flex gap-4 items-start">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex justify-between items-center mb-1">
+                            <div className="text-[10px] font-black uppercase text-accent tracking-[0.2em]">Node_{alert.camera_id || '01'}</div>
+                            <div className="text-[10px] font-mono text-slate-500">{new Date(alert.created_at).toLocaleTimeString()}</div>
+                          </div>
+                          <div className="text-sm font-black text-white uppercase truncate group-hover/alert:text-accent transition-colors">{alert.title}</div>
+                          <div className="text-xs text-slate-400 line-clamp-2 mt-1 font-medium">{alert.description}</div>
+                        </div>
+                        {alert.image_path && (
+                          <div className="w-14 h-14 rounded-xl overflow-hidden shadow-2xl border border-white/10 shrink-0 bg-slate-800">
+                            <img
+                              src={`http://localhost:8000${alert.image_path}`}
+                              alt="Alert"
+                              className="w-full h-full object-cover group-hover/alert:scale-125 transition-transform duration-500"
+                              onError={(e) => (e.currentTarget.src = 'https://via.placeholder.com/150')}
+                            />
+                          </div>
+                        )}
                       </div>
-                      <div className="text-sm font-black text-white uppercase truncate group-hover/alert:text-accent transition-colors">{alert.title}</div>
-                      <div className="text-xs text-slate-400 line-clamp-2 mt-1 font-medium">{alert.description}</div>
                     </div>
-                    {alert.image_path && (
-                      <div className="w-14 h-14 rounded-xl overflow-hidden shadow-2xl border border-white/10 shrink-0">
-                        <img src={`http://localhost:8000${alert.image_path}`} alt="Alert" className="w-full h-full object-cover group-hover/alert:scale-125 transition-transform duration-500" />
-                      </div>
-                    )}
-                  </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
 
             <button

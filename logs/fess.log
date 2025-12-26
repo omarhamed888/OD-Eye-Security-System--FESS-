@@ -10994,4 +10994,7 @@ ModuleNotFoundError: No module named 'lap'
 2025-12-26 19:01:27.923 | INFO     | __main__:on_closing:893 - Shutting down FESS Professional Dashboard...
 2025-12-26 19:01:28.756 | INFO     | __main__:on_closing:908 - ✅ Shutdown complete
 2025-12-26 19:01:29.294 | INFO     | __main__:main:926 - FESS Terminated
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
